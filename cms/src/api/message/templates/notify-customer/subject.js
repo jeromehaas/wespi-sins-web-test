@@ -1,0 +1,1 @@
+module.exports = 'Vielen Dank für Ihre Nachricht!';

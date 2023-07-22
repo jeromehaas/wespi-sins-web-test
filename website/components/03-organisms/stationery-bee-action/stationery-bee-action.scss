@@ -1,0 +1,31 @@
+.stationery-bee-action {
+	padding: 0 !important;
+
+	&__inner, .inner {
+		padding: 0;
+		position: relative;;
+		max-width: 100% !important;
+	}
+
+	&__background, .background {
+		height: 240px;
+
+		&--upper {
+			background-color: $white-100;
+		}
+
+		&--lower {
+			background-color: $white-100;
+		}
+
+	}
+
+	@media (max-width: 1050px) {
+
+		&__background, .background {
+			height: 200px;
+		}
+
+	}
+
+}

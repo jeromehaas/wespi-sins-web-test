@@ -1,0 +1,181 @@
+.start-hero {
+	position: relative;
+	height: 100%;
+	min-height: calc(100vh - 100px);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	&__inner {
+		display: grid; 
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	&__background-video, .background-video {
+		z-index: 10;
+
+		&__video {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			opacity: 0;
+		}
+
+	}
+
+	&__boxes, .boxes {
+		grid-column: 1 / span 12;
+		z-index: 20;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 32px;
+		margin-bottom: 64px;
+
+		&__item, .item {
+			background-color: $white-100;		
+
+			&:nth-child(1) {
+				grid-column: 3 / span 4;
+			}
+
+			&:nth-child(2) {
+				grid-column: 7 / span 4;
+			}
+
+			&__content, .content {
+				padding: 32px;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				
+				&__link {
+					margin-top: auto;
+					margin-bottom: 8px;
+				}
+
+			}
+
+			&__progress, .progress {
+				position: relative;
+				width: 100%;
+				height: 8px;
+				bottom: 6px;
+
+				&__background,
+				&__status {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					height: 100%;
+				}
+
+				&__background {
+					right: 0;
+					background-color: $brown-40;
+				}
+
+				&__status {
+					right: 100%;
+					background-color: $brown-80;;
+				}
+
+			} 
+
+		}
+
+	}
+
+	@media (max-width: 1150px) {
+		
+		&__boxes, .boxes {
+
+			&__item, .item {
+
+				&:nth-child(1) {
+					grid-column: 2 / span 5;
+				}
+
+				&:nth-child(2) {
+					grid-column: 7 / span 5;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	@media (max-width: 850px) {
+		min-height: calc(100vh - 80px);
+		
+		&__boxes, .boxes {
+			grid-column: 1 / span 12;
+
+			&__item, .item {
+
+				&:nth-child(1) {
+					grid-column: 2 / span 10;
+				}
+
+				&:nth-child(2) {
+					grid-column: 2 / span 10;
+				}
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: 600px) {
+
+		&__boxes, .boxes {
+			grid-gap: 24px;
+			margin-bottom: 24px;
+
+			&__item, .item {
+
+				&:nth-child(1) {
+					grid-column: 1 / span 12;
+				}
+
+				&:nth-child(2) {
+					grid-column: 1 / span 12;
+				}
+
+			}
+
+
+		}
+		
+	}
+
+	@media (max-width: 400px) {
+
+		&__boxes, .boxes {
+			grid-gap: 16px;
+
+			&__item, .item {
+
+				&:nth-child(1) {
+					grid-column: 1 / span 12;
+				}
+
+				&:nth-child(2) {
+					grid-column: 1 / span 12;
+				}
+
+			}
+
+		}
+
+	}
+
+}

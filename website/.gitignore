@@ -1,0 +1,19 @@
+/node_modules
+
+# NEXTJS
+/.next/
+/out/
+
+# PRODUCTION
+/build
+
+# MISC
+.DS_Store
+*.pem
+
+# ENV FILES
+.env
+
+# VERCEL
+.vercel
+

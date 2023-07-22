@@ -1,0 +1,248 @@
+.order-confirmation-form {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 32px;
+	align-items: end;
+
+	&__cancel-button {
+		grid-column: 1 / span 12;
+		margin-bottom: 24px;
+	}
+
+	&__form, .form {
+		grid-column: 1 / span 12;
+
+		&__heading {
+			margin-bottom: 32px;
+		}
+
+		&__block, .block {
+			grid-column: 1 / span 12;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-column-gap: 32px;
+			margin-bottom: 64px;
+
+			&__heading {
+				grid-column: 1 / span 3;
+			}
+
+			&__content, .content {
+				grid-column: 4 / span 9;
+
+				&__order-list, .order-list {
+					margin-bottom: 8px;
+
+					&__row {
+						display: grid;
+						grid-template-columns: repeat(9, 1fr);
+						grid-column-gap: 32px;
+						border-bottom: 1px solid transparentize($black-100, 0.8);
+						padding: 8px 0;
+					}
+
+					&__item {
+
+						&:nth-child(1) {
+							grid-column: span 3;
+						}
+
+						&:nth-child(2) {
+							grid-column: span 3;
+						}
+
+						&:nth-child(3) {
+							grid-column: span 2;
+						}
+
+						&:nth-child(4) {
+							grid-column: span 1;
+							text-align: right;
+						}
+
+					}
+
+				}
+
+				&__address, .address {
+					margin-bottom: 8px;
+				}
+
+			}
+
+		}
+
+	}
+				
+	&__actions, .actions {
+		grid-template-columns: repeat(12, 1fr);
+		display: grid;
+		grid-column: 1 / span 12;
+		grid-column-gap: 32px;
+		align-items: start;
+		justify-content: start;
+				
+		&__back-button {
+			grid-column: 1 / span 3;
+			width: auto;
+		}
+					
+		&__next-button {
+			grid-column: 4 / span 9;
+			align-self: center;;
+			justify-self: start;
+		}
+					
+	}
+
+	@media (max-width: 1250px) {
+
+		&__actions, .actions {
+				
+			&__back-button {
+				grid-column: 1 / span 12;
+				order: 2;
+			}
+				
+			&__next-button {
+				grid-column: 1 / span 12;
+				order: 1;
+				margin-bottom: 32px;
+			}
+
+		}
+
+	}
+
+	@media (max-width: 1050px) {
+
+		&__form, .form {
+
+			&__block, .block {
+				margin-bottom: 40px;
+
+				&__heading {
+					grid-column: 1 / span 12;
+				}
+
+				&__content, .content {
+					grid-column: 1 / span 12;
+
+					&__order-list, .order-list {
+
+						&__row {
+							grid-template-columns: repeat(12, 1fr);
+						}
+
+						&__item {
+
+							&:nth-child(1) {
+								grid-column: span 4;
+							}
+
+							&:nth-child(2) {
+								grid-column: span 3;
+							}
+
+							&:nth-child(3) {
+								grid-column: span 3;
+							}
+
+							&:nth-child(4) {
+								grid-column: span 2;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: 950px) {
+
+		&__form, .form {
+
+			&__block, .block {
+
+				&__content, .content {
+					grid-column: 1 / span 12;
+
+					&__order-list, .order-list {
+						grid-template-columns: repeat(12, 1fr);
+
+						&__item {
+
+							&:nth-child(1) {
+								grid-column: span 12;
+							}
+
+							&:nth-child(2) {
+								grid-column: span 12;
+							}
+
+							&:nth-child(3) {
+								grid-column: span 12;
+							}
+
+							&:nth-child(4) {
+								grid-column: span 12;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: 600px) {
+		grid-column-gap: 24px;
+
+		&__form, .form {
+
+			&__block, .block {
+				grid-column-gap: 24px;
+			}
+
+		}
+
+		&__actions, .actions {
+			grid-column-gap: 24px
+		} 
+
+	}
+
+	@media (max-width: 400px) {
+		grid-column-gap: 16px;
+
+		&__form, .form {
+
+			&__block, .block {
+				grid-column-gap: 16px;
+			}
+
+		}
+
+		&__actions, .actions {
+			grid-column-gap: 16px;
+
+			&__next-button {
+				width: 100%;
+			}
+
+		}
+
+	} 
+
+}

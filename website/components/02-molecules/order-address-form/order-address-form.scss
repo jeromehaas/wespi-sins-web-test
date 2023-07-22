@@ -1,0 +1,93 @@
+.order-address-form {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 32px;
+	align-items: end;
+
+	&__cancel-button {
+		grid-column: 1 / span 12;
+		margin-bottom: 24px;
+	}
+
+	&__form, .form {
+		grid-column: 4 / span 9;
+		margin-bottom: 24px;
+
+		&__heading {
+			margin-bottom: 32px;
+		}
+
+	}
+
+	&__actions, .actions {
+		grid-template-columns: repeat(12, 1fr);
+		display: grid;
+		grid-column: 1 / span 12;
+		grid-column-gap: 32px;
+		align-items: start;
+		justify-content: start;
+				
+		&__back-button {
+			grid-column: 1 / span 3;
+			width: auto;
+		}
+				
+		&__next-button {
+			grid-column: 4 / span 9;
+			align-self: center;;
+			justify-self: start;
+		}
+
+	}
+
+	@media (max-width: 1250px) {
+
+		&__form, .form {
+			grid-column: 1 / span 12;
+			margin-bottom: 24px;
+		}
+
+		&__actions, .actions {
+				
+			&__back-button {
+				grid-column: 1 / span 12;
+				order: 2;
+			}
+				
+			&__next-button {
+				grid-column: 1 / span 12;
+				order: 1;
+				margin-bottom: 32px;
+			}
+
+		}
+
+	}
+
+	@media (max-width: 600px) {
+		grid-column-gap: 24px;
+
+		&__actions, .actions {
+			grid-column: 1 / span 12;
+			grid-column-gap: 24px
+		} 
+
+	}
+
+	@media (max-width: 400px) {
+		grid-column-gap: 16px;
+
+		&__actions, .actions {
+			grid-column: 1 / span 12;
+			grid-column-gap: 16px;
+
+			&__next-button {
+				width: 100%;
+			}
+
+		}
+
+	} 
+
+}
+

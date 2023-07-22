@@ -1,0 +1,11 @@
+.stationery-impression {
+	padding: 32px 0 !important;	
+
+	&__image {
+		width: 100%;
+		height: 560px;
+		min-height: 240px;
+		max-height: calc(100vh - 240px);
+	}
+
+}

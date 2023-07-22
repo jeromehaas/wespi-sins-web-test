@@ -1,0 +1,41 @@
+.action {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+
+	&__icon {
+		margin-right: 8px;
+		width: 20px;
+		height: 20px;
+
+		& path {
+			stroke: $brown-80;
+			transition: all 0.2s ease;
+		}
+
+	}
+
+	&__label {
+		color: $brown-80;
+		transition: all 0.2s ease;
+	}
+
+	&:hover {
+
+		& .action__label {
+			color: $brown-60;
+		}
+
+		& .action__icon {
+
+			& path {
+				stroke: $brown-60;
+			}
+
+		}
+
+	}
+
+}

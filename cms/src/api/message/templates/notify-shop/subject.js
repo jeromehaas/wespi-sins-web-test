@@ -1,0 +1,1 @@
+module.exports = 'Eine neue Nachricht von der Website';

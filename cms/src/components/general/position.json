@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_general_positions",
+  "info": {
+    "displayName": "Position",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "manufacturer": {
+      "type": "string",
+      "required": true
+    },
+    "serial": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+	font-family: Messina-Sans;
+	src:
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-book.ttf") format("ttf"),
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-book.woff") format("woff"),
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-book.woff2") format("woff2");
+	font-display: block;
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Messina-Sans;
+	src:
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-regular.ttf") format("ttf"),
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-regular.woff") format("woff"),
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-regular.woff2") format("woff2");
+	font-display: block;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Messina-Sans-Serif;
+	src:
+		local("fonts/messina-sans-serif"), url("/fonts/messina-sans-serif/messina-sans-serif-semibold.ttf") format("ttf"),
+		local("fonts/messina-sans-serif"), url("/fonts/messina-sans-serif/messina-sans-serif-semibold.woff") format("woff"),
+		local("fonts/messina-sans-serif"), url("/fonts/messina-sans-serif/messina-sans-serif-semibold.woff2") format("woff2");
+	font-display: block;
+	font-weight: 600;
+	font-style: serif;
+}
+
+@font-face {
+	font-family: Messina-Sans;
+	src:
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-bold.ttf") format("ttf"),
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-bold.woff") format("woff"),
+		local("fonts/messina-sans"), url("/fonts/messina-sans/messina-sans-bold.woff2") format("woff2");
+	font-display: block;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: Messina-Sans-Serif;
+	src:
+		local("fonts/messina-sans-serif"), url("/fonts/messina-sans-serif/messina-sans-serif-bold.ttf") format("ttf"),
+		local("fonts/messina-sans-serif"), url("/fonts/messina-sans-serif/messina-sans-serif-bold.woff") format("woff"),
+		local("fonts/messina-sans-serif"), url("/fonts/messina-sans-serif/messina-sans-serif-bold.woff2") format("woff2");
+	font-display: block;
+	font-weight: 700;
+	font-style: serif;
+}

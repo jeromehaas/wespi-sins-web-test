@@ -1,0 +1,18 @@
+.submit-button {
+	background-color: $brown-80;
+	color:$white-100;
+	padding: 8px 24px;
+	border-radius: 16px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	display: inline-block;
+
+	&:hover, &:active, &:focus {
+		background-color: $brown-60;
+	}
+
+	&:disabled {
+		background-color: $brown-40;
+	}
+
+}

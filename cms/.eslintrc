@@ -1,0 +1,42 @@
+{
+  "parser": "babel-eslint",
+	"extends": ["airbnb"],
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "browser": false
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": false
+    },
+    "sourceType": "module"
+  },
+  "globals": {
+    "strapi": true
+  },
+  "rules": {
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"import/no-unresolved": "off",
+		"import/extensions": "off",
+		"padded-blocks": "off",
+		"consistent-return": "off",
+		"indent": [2, "tab"],
+		"no-tabs": 0,
+		"max-len": "off",
+		"object-curly-spacing": ["error", "always"],
+		"object-curly-newline": "off",
+		"no-extra-semi": "off",
+		"no-unused-expressions": "off",
+		"arrow-body-style": ["error", "as-needed"],
+		"no-param-reassign": "off",
+		"template-curly-spacing": "off",
+		"quote-props": "off",
+		"import/prefer-default-export": "off",
+		"no-console": "off",
+		"object-shorthand": "off"
+  }
+}

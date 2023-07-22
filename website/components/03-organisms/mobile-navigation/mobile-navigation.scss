@@ -1,0 +1,145 @@
+.mobile-navigation {
+	position: relative;
+	padding: 0 !important;
+	display: none;
+
+	&__bar, .bar {
+		padding: 0 32px;
+		left: 0;
+		top: 0;
+		right: 0;
+		position: fixed;
+		height: 80px;
+		z-index: 50;
+		background-color: $white-100;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		&__logo {
+			cursor: pointer;
+			height: 24px;
+			width: 100%;
+		}
+
+		&__hamburger {
+			margin-bottom: 4px;
+		}
+
+	}
+
+	&__menu, .menu {
+		background-color: $beige-40;
+		position: fixed;
+		bottom: 0;
+		right: 100%;
+		width: 100%;
+		height: 100vh;
+		padding: 32px;
+		display: flex;
+		flex-direction: column;
+		z-index: 40;
+		overflow: scroll;
+
+		&__links, .links {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-top: 80px;
+			margin-bottom: 32px;
+
+			&__item {
+				color: $brown-80;
+				transition: all 0.4s ease;
+
+				&:hover {
+					color: $black-100;
+				}
+
+			}
+
+		}
+
+		&__contact-details, .contact-details {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-top: auto;
+			margin-bottom: 24px;
+
+			&__heading {
+				margin-bottom: 8px;
+			}
+
+			&__item {
+				display: inline-block;
+
+				&:nth-child(3) {
+					margin-bottom: 8px;
+				}
+
+			}
+
+		}
+
+		&__business-hours, .business-hours {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			&__heading {
+				margin-bottom: 8px;
+			}
+
+			&__item {
+				display: inline-block;
+
+				&:nth-child(3) {
+					margin-bottom: 8px;
+				}
+
+			}
+
+		}
+
+	}
+
+	&__placeholder {
+		height: 80px;
+	}
+
+	@media (max-width: 850px) {
+		display: block;
+	}
+
+	@media (max-width: 600px) {
+
+		&__bar, .bar {
+			padding: 0 24px;
+		}
+
+
+		&__menu, .menu {
+			padding: 32px 24px;
+		}
+
+	}
+
+	@media (max-width: 350px) {
+
+		&__bar, .bar {
+
+			&__logo {
+				height: 16px;
+			}
+
+		}
+
+	}
+
+}

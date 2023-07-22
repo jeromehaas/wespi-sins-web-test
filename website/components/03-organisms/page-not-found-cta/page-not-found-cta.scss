@@ -1,0 +1,48 @@
+.page-not-found-cta {
+	background-color: $beige-20;
+
+	&__inner {
+		display: grid; 
+		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 32px;
+		padding-top: 32px;
+	}
+
+	&__content, .content {
+		grid-column: 1 / span 10;
+
+		&__text {
+			margin-bottom: 32px;
+		}
+
+		&__button{
+			margin-bottom: 64px;
+		}
+
+	}
+
+	@media (max-width: 1050px) {
+
+		&__content, .content {
+			grid-column: 1 / span 12;
+		}
+
+	}
+
+	@media (max-width: 600px) {
+
+		&__inner {
+			grid-column-gap: 24px;
+		}
+
+	}
+
+	@media (max-width: 400px) {
+
+		&__inner {
+			grid-column-gap: 16px;
+		}
+
+	}
+
+}

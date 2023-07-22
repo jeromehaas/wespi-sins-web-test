@@ -1,0 +1,52 @@
+.order-positions-form {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 32px;
+
+	&__cancel-button {
+		grid-column: 1 / span 12;
+		margin-bottom: 24px;
+	}
+
+	&__form, .form {
+		grid-column: 1 / span 12;
+		margin-bottom: 32px;
+
+		&__heading {
+			margin-bottom: 32px;
+		}
+				
+		&__add-article-link {
+			margin-bottom: 32px;
+		}
+
+		&__continue-button {
+			margin-bottom: 32px;
+		}
+
+	}
+
+	&__actions, .actions {
+		grid-column: 1 / span 12;
+	}
+
+	@media (max-width: 600px) {
+		grid-column-gap: 24px;
+	} 
+
+	@media (max-width: 400px) {
+		grid-column-gap: 16px;
+
+		&__actions, .actions {
+			grid-column: 1 / span 12;
+
+			&__next-button {
+				width: 100%;
+			}
+
+		}
+
+
+	} 
+
+}

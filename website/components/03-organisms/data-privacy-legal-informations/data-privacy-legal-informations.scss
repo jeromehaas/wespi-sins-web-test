@@ -1,0 +1,59 @@
+.data-privacy-legal-informations {
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 32px;
+	}
+
+	&__paragraphs, .paragraphs {
+		grid-column: 1 / span 8;
+
+		&__item, .item {
+			margin-bottom: 32px;
+
+			&__heading {
+				margin-bottom: 8px;
+			}
+
+			&__text {
+
+				p {
+					margin-bottom: 16px;
+				}
+
+				a {
+					text-decoration: underline !important;
+					text-underline-offset: 3px;
+				}
+			}
+
+		}
+    
+	}
+
+	@media (max-width: 850px) {
+
+		&__paragraphs, .paragraphs {
+			grid-column: 1 / span 12;
+		}
+
+	}
+
+	@media (max-width: 600px) {
+
+		&__inner {
+			grid-column-gap: 24px;
+		}
+
+	}
+
+	@media (max-width: 400px) {
+
+		&__inner {
+			grid-column-gap: 16px;
+		}
+
+	}
+
+}

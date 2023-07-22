@@ -1,0 +1,175 @@
+.footer {
+	background-color: $beige-40;
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 32px;
+	}
+
+	&__logo {
+		width: 100%;
+		height: 100%;
+		max-width: 240px;
+		max-height: 240px;
+		grid-column: 1 / span 4;
+	}
+
+	&__contact-details, .contact-details {
+		grid-column: 5 / span 4;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-top: 24px;
+
+		&__heading {
+			margin-bottom: 8px;
+		}
+
+		&__item {
+			display: inline-block;
+
+			&:nth-child(3) {
+				margin-bottom: 8px;
+			}
+
+		}
+
+	}
+
+	&__links, .links {
+		grid-column: 11 / span 2;
+		display: flex;
+		flex-direction: column;
+		margin-top: 24px;
+
+		&__navigation, .navigation {
+			margin-top: auto;
+			display: flex;
+			justify-content: center;
+
+			&__item {
+				margin: 0 8px;
+			}
+
+		}
+
+	}
+
+	@media (max-width: 1550px) {
+
+		&__links, .links {
+			grid-column: 10 / span 3;
+		}
+
+	}
+
+	@media (max-width: 1050px) {
+
+		&__logo {
+			width: 100%;
+			height: 100%;
+			max-width: 200px;
+			max-height: 200px;
+			grid-column: 1 / span 5;
+		}
+
+
+		&__contact-details, .contact-details {
+			grid-column: 7 / span 6;
+			margin-bottom: 32px;
+			margin-top: 0;
+		}
+
+		&__links, .links {
+			grid-column: 7 / span 6;
+			justify-content: flex-start;
+
+			&__button {
+				margin-bottom: 40px;
+			}
+
+			&__navigation {
+				justify-content: flex-start;
+			}
+
+		}
+
+	}
+
+	@media (max-width: 650px) {
+
+
+		&__logo {
+			max-width: 320px;
+			max-height: 320px;
+			grid-column: 1 / span 12;
+			margin: 32px auto 0;
+		}
+
+		&__contact-details, .contact-details {
+			grid-column: 1 / span 12;
+			margin-top: 24px;
+
+			&__heading {
+				margin-bottom: 8px;
+				text-align: center;
+				width: 100%;
+			}
+
+			&__item {
+				text-align: center;
+				width: 100%;
+
+				&:nth-child(3) {
+					margin-bottom: 8px;
+				}
+
+			}
+
+		}
+
+		&__links, .links {
+			grid-column: 1 / span 12;
+
+			&__button {
+				margin: 0 auto 48px;;
+			}
+
+			&__navigation, .navigation {
+				display: flex;
+				justify-content: center;
+				margin: 0 auto 32px;
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: 600px) {
+
+		&__inner {
+			grid-column-gap: 24px;
+		}
+
+		&__logo {
+			max-width: unset;
+			max-height: unset;
+			height: auto;
+			grid-column: 3 / span 8;
+			margin: 32px auto 0;
+		}
+
+	}
+
+	@media (max-width: 400px) {
+
+		&__inner {
+			grid-column-gap: 16px;
+		}
+
+	}
+
+}

@@ -1,0 +1,12 @@
+.hyperlink {
+	font-size: inherit;
+	color: $brown-80;
+	text-decoration: underline;
+	transition: all 0.2s ease;
+	text-underline-position: from-font;
+
+	&:hover, &:active, &:focus {
+		color: $brown-60;
+	}
+
+}

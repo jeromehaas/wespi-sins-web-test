@@ -1,0 +1,44 @@
+.anchor {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	&__label {
+		color: $brown-80;
+		transition: all 0.2s ease;
+	}
+
+	&__icon {
+		width: 32px;
+		height: 12px;
+		margin-left: 12px;
+		transition: all 0.2s ease;
+		position: relative;
+		right: 0;
+
+		& path {
+			stroke: $brown-80;
+			transition: all 0.2s ease;
+		}
+
+	}
+	
+	&:hover, &:active, &:focus {
+
+		& .anchor__label {
+			color: $brown-60;
+		}
+		
+		& .anchor__icon {
+			right: -16px;
+
+			& path {
+				stroke: $brown-60;
+			}
+
+		}
+
+	}
+
+}

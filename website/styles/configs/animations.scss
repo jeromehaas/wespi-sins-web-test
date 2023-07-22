@@ -1,0 +1,15 @@
+.animation {
+
+	&--fade-in {
+		visibility: hidden;
+		opacity: 0;
+		position: relative;
+		top: 16px;
+	}
+
+	&--appear {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+}

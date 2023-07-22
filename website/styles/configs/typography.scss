@@ -1,0 +1,202 @@
+h1, h2, h3, h4, p, a, li, td, label, input {
+	font-family: Messina-Sans, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+.heading {
+	
+	&--h1 {
+		font-family: Messina-Sans, Helvetica, sans-serif;
+		font-size: 44px;
+		font-weight: 400;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+
+	&--h2 {
+		font-family: Messina-Sans, Helvetica, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	&--h3 {
+		font-family: Messina-Sans-Serif, serif;
+		font-size: 51px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+
+	&--h4 {
+		font-family: Messina-Sans, Helvetica, sans-serif;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.5;
+		letter-spacing: 0;
+	}
+
+}
+
+.paragraph {
+	font-family: Messina-Sans, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+
+	&--small {
+		font-size: 14px;
+	}
+
+	&--uppercase {
+		text-transform: uppercase;
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+
+}
+
+.markdown {
+
+	p, a {
+		font-family: Messina-Sans, Helvetica, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+}
+
+.list-item {
+	font-family: Messina-Sans, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.anchor {
+
+	&__label {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+}
+
+.button {
+	font-family: Messina-Sans, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.submit-button {
+	font-size: 16px;
+}
+
+.input-field, .text-area {
+
+	&__label {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&__input {
+		font-size: 16px;
+		font-weight: 400;
+		font-family: Messina-Sans, Helvetica, sans-serif;
+
+		&::placeholder {
+			font-size: inherit;
+			font-weight: inherit;
+			font-family: Messina-Sans, Helvetica, sans-serif;
+			color: $black-100;
+		}
+
+	}
+
+}
+
+.text-area {
+
+	&__input {
+		resize: none;;
+	}
+
+}
+
+.mobile-navigation {
+
+	&__menu, .menu {
+
+		&__links, .links {
+
+			&__item {
+				font-size: 24px;
+				font-weight: 700;
+				margin-bottom: 16px;
+			}
+
+		}
+
+	}
+	
+}
+
+@media (max-width: 1050px) {
+
+	.heading {
+		hyphens: auto;
+	}
+
+}
+
+@media (max-width: 850px) {
+
+	.heading {
+	
+		&--h1 {
+			font-size: 32px;
+		}
+
+		&--h3 {
+			font-size: 40px;
+		}
+
+	}
+
+	.paragraph {
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.heading {
+		hyphens: auto;
+	
+		&--h1 {
+			font-size: 23px;
+		}
+
+		&--h2 {
+			font-size: 21px;
+		}
+
+		&--h3 {
+			font-size: 40px;
+		}
+
+	}
+
+	.paragraph {
+		font-size: 15px;
+	}
+
+}

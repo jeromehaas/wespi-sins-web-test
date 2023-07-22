@@ -1,0 +1,38 @@
+.grid {
+	position: fixed;
+	top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	pointer-events: none;
+	z-index: 1000;
+
+	&__inner {
+		display: none;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 32px;
+	}
+
+	&__column {
+		display: block;
+		background-color: transparentize($red-80, 0.9);
+		border-left: 0.5px solid $red-80;
+		border-right: 0.5px solid $red-80;
+	}
+
+	@media (max-width: 600px) {
+
+		&__inner {
+			grid-column-gap: 24px;
+		}
+		
+	}
+
+	@media (max-width: 400px) {
+
+		&__inner {
+			grid-column-gap: 16px;
+		}
+		
+	}
+
+}

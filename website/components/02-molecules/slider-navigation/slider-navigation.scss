@@ -1,0 +1,28 @@
+.slider-navigation {
+	display: flex;
+	flex-direction: row;		
+
+	&__item, .item {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		&__index {
+			margin-right: 12px;
+			cursor: pointer;
+			color: $brown-80;
+			font-weight: 700;
+		}
+
+		&__dash {
+			width: 0;
+			height: 2px;
+			border-radius: 2px;
+			margin-right: 12px;
+			background-color: $brown-80;
+		}
+
+	}
+
+}
